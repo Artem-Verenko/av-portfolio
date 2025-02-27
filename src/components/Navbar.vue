@@ -1,11 +1,18 @@
 <template>
-  <nav class="navbar">
-    <ul>
-      <li><a href="/blog">Blog</a></li>
-      <li><a href="/books">Books</a></li>
-      <li><a href="/cv">CV</a></li>
-    </ul>
-  </nav>
+	<nav role="navigation" class="navbar">
+		<ul>
+			<li><router-link to="/blog">Blog</router-link></li>
+			<li><router-link to="/books">Books</router-link></li>
+			<li><router-link to="/cv">CV</router-link></li>
+		</ul>
+	</nav>
 </template>
 
 <script></script>
+
+<style scoped>
+.router-link-active {
+	color: blue;
+	font-weight: bold;
+}
+</style>
